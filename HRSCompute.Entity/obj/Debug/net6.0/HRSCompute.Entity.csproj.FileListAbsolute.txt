@@ -1,0 +1,12 @@
+C:\Projects\HRSCompute.Entity\bin\Debug\net6.0\HRSCompute.Entity.deps.json
+C:\Projects\HRSCompute.Entity\bin\Debug\net6.0\HRSCompute.Entity.dll
+C:\Projects\HRSCompute.Entity\bin\Debug\net6.0\HRSCompute.Entity.pdb
+C:\Projects\HRSCompute.Entity\obj\Debug\net6.0\HRSCompute.Entity.csproj.AssemblyReference.cache
+C:\Projects\HRSCompute.Entity\obj\Debug\net6.0\HRSCompute.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\HRSCompute.Entity\obj\Debug\net6.0\HRSCompute.Entity.AssemblyInfoInputs.cache
+C:\Projects\HRSCompute.Entity\obj\Debug\net6.0\HRSCompute.Entity.AssemblyInfo.cs
+C:\Projects\HRSCompute.Entity\obj\Debug\net6.0\HRSCompute.Entity.csproj.CoreCompileInputs.cache
+C:\Projects\HRSCompute.Entity\obj\Debug\net6.0\HRSCompute.Entity.dll
+C:\Projects\HRSCompute.Entity\obj\Debug\net6.0\refint\HRSCompute.Entity.dll
+C:\Projects\HRSCompute.Entity\obj\Debug\net6.0\HRSCompute.Entity.pdb
+C:\Projects\HRSCompute.Entity\obj\Debug\net6.0\ref\HRSCompute.Entity.dll

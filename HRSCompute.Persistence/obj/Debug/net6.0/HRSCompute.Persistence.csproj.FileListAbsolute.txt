@@ -1,0 +1,17 @@
+C:\Projects\HRSCompute.Persistence\bin\Debug\net6.0\HRSCompute.Persistence.deps.json
+C:\Projects\HRSCompute.Persistence\bin\Debug\net6.0\HRSCompute.Persistence.dll
+C:\Projects\HRSCompute.Persistence\bin\Debug\net6.0\HRSCompute.Persistence.pdb
+C:\Projects\HRSCompute.Persistence\obj\Debug\net6.0\HRSCompute.Persistence.csproj.AssemblyReference.cache
+C:\Projects\HRSCompute.Persistence\obj\Debug\net6.0\HRSCompute.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\HRSCompute.Persistence\obj\Debug\net6.0\HRSCompute.Persistence.AssemblyInfoInputs.cache
+C:\Projects\HRSCompute.Persistence\obj\Debug\net6.0\HRSCompute.Persistence.AssemblyInfo.cs
+C:\Projects\HRSCompute.Persistence\obj\Debug\net6.0\HRSCompute.Persistence.csproj.CoreCompileInputs.cache
+C:\Projects\HRSCompute.Persistence\obj\Debug\net6.0\HRSCompute.Persistence.dll
+C:\Projects\HRSCompute.Persistence\obj\Debug\net6.0\refint\HRSCompute.Persistence.dll
+C:\Projects\HRSCompute.Persistence\obj\Debug\net6.0\HRSCompute.Persistence.pdb
+C:\Projects\HRSCompute.Persistence\obj\Debug\net6.0\ref\HRSCompute.Persistence.dll
+C:\Projects\HRSCompute.Persistence\bin\Debug\net6.0\HRSCompute.Entity.dll
+C:\Projects\HRSCompute.Persistence\bin\Debug\net6.0\HRSCompute.Entity.pdb
+C:\Projects\HRSCompute.Persistence\obj\Debug\net6.0\HRSCompute.Persistence.csproj.CopyComplete
+C:\Projects\HRSCompute.Persistence\bin\Debug\net6.0\HRSCompute.Persistence.runtimeconfig.json
+C:\Projects\HRSCompute.Persistence\obj\Debug\net6.0\HRSCompute.Persistence.genruntimeconfig.cache
