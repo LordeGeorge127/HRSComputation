@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7yPvjfmoQ0KELlwl03WivJYehlkRLI12g5E39aGuEe0u51TH5b63o6dLUhM+V35q9Csu2zNdjDwjHskMU4TxHg==",
+  "dgSpecHash": "w8hs3CIltsInUNOXIS4fp3/mOTvwQeAOJryKYa6VfkBUuoau7+xfAh2KLhBkjjHEAiveaUU/lsJgWZCLEqqEzQ==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\HRSCompute.Entity\\HRSCompute.Entity.csproj",
+  "projectFilePath": "C:\\Projects\\HRSComputation\\HRSCompute.Entity\\HRSCompute.Entity.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

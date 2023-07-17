@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Mvg2EWek0TqU8+A4cP62Bu1pIkbTR7cs7CFO2TbjMw3HMat5JLlc36LHXeWpGm+sKBBoueKg+CIhBxmGuZLV0g==",
+  "dgSpecHash": "xbaPRJja3DqlgIGZoNdh9qeOXsA6lskf+NwVitAm2uRN7cTJ4eEuL3LTWVcgPE2SIOiFJotcSJenVbC3OMHRMg==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\HRSCompute\\HRSCompute.csproj",
+  "projectFilePath": "C:\\Projects\\HRSComputation\\HRSCompute\\HRSCompute.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lorde\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Lorde\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -11,7 +11,7 @@ namespace HRSCompute.Entity
     {
         public int Id { get; set; }
         [Required]
-        public int EmployeeNo { get; set; }
+        public string EmployeeNo { get; set; }
         [Required, MaxLength(50)]
         public string FirstName { get; set; }
         [MaxLength(50)]

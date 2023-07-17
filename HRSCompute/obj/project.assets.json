@@ -3705,11 +3705,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\HRSCompute\\HRSCompute.csproj",
+      "projectUniqueName": "C:\\Projects\\HRSComputation\\HRSCompute\\HRSCompute.csproj",
       "projectName": "HRSCompute",
-      "projectPath": "C:\\Projects\\HRSCompute\\HRSCompute.csproj",
+      "projectPath": "C:\\Projects\\HRSComputation\\HRSCompute\\HRSCompute.csproj",
       "packagesPath": "C:\\Users\\Lorde\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\HRSCompute\\obj\\",
+      "outputPath": "C:\\Projects\\HRSComputation\\HRSCompute\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lorde\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3727,11 +3727,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Projects\\HRSCompute.Entity\\HRSCompute.Entity.csproj": {
-              "projectPath": "C:\\Projects\\HRSCompute.Entity\\HRSCompute.Entity.csproj"
+            "C:\\Projects\\HRSComputation\\HRSCompute.Entity\\HRSCompute.Entity.csproj": {
+              "projectPath": "C:\\Projects\\HRSComputation\\HRSCompute.Entity\\HRSCompute.Entity.csproj"
             },
-            "C:\\Projects\\HRSCompute.Services\\HRSCompute.Services.csproj": {
-              "projectPath": "C:\\Projects\\HRSCompute.Services\\HRSCompute.Services.csproj"
+            "C:\\Projects\\HRSComputation\\HRSCompute.Services\\HRSCompute.Services.csproj": {
+              "projectPath": "C:\\Projects\\HRSComputation\\HRSCompute.Services\\HRSCompute.Services.csproj"
             }
           }
         }

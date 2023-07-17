@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\HRSCompute.Entity\\HRSCompute.Entity.csproj": {}
+    "C:\\Projects\\HRSComputation\\HRSCompute.Entity\\HRSCompute.Entity.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\HRSCompute.Entity\\HRSCompute.Entity.csproj": {
+    "C:\\Projects\\HRSComputation\\HRSCompute.Entity\\HRSCompute.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\HRSCompute.Entity\\HRSCompute.Entity.csproj",
+        "projectUniqueName": "C:\\Projects\\HRSComputation\\HRSCompute.Entity\\HRSCompute.Entity.csproj",
         "projectName": "HRSCompute.Entity",
-        "projectPath": "C:\\Projects\\HRSCompute.Entity\\HRSCompute.Entity.csproj",
+        "projectPath": "C:\\Projects\\HRSComputation\\HRSCompute.Entity\\HRSCompute.Entity.csproj",
         "packagesPath": "C:\\Users\\Lorde\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\HRSCompute.Entity\\obj\\",
+        "outputPath": "C:\\Projects\\HRSComputation\\HRSCompute.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lorde\\AppData\\Roaming\\NuGet\\NuGet.Config",
