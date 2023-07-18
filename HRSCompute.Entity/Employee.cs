@@ -31,16 +31,13 @@ namespace HRSCompute.Entity
         public string NHIF { get; set; }
         public PaymentMethod PaymentMethod { get; set; }
         public StudentLoan StudentLoan { get; set; }
+        //NATION SOCIAL SECURITY FUND 
         public NSSFMember UnionMember { get; set; }
         //National housing fund 3%
-        public string NHF { get; set; }
-        //NATION SOCIAL SECURITY FUND 
-        
+        public string NHF { get; set; }      
         public string Address  { get; set; }
         public string City { get; set; }
         public string PostCode { get; set; }
-
-
         public ICollection<PaymentRecord> PaymentRecords { get; set; }
     }
 }

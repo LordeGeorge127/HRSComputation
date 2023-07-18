@@ -18,4 +18,8 @@
     <ProjectReference Include="..\HRSCompute.Services\HRSCompute.Services.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\employee\" />
+  </ItemGroup>
+
 </Project>
