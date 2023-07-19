@@ -13,6 +13,11 @@ License: You must have a valid license purchased only from templatemonster to le
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>HRS Compute</title>
     <meta name="description" content="A HRS Computation System" />
+    <!-- Font Awesome -->
+    <link href="~/vendors/fontawesome-free/css/all.css" rel="stylesheet" />
+    <link href="~/vendors/fontawesome-free/css/all.min.css" rel="stylesheet" />
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico">
@@ -193,126 +198,55 @@ License: You must have a valid license purchased only from templatemonster to le
         </form>
         <!-- /Top Navbar -->
         <!-- Vertical Nav -->
-        <nav class="hk-nav hk-nav-dark">
+        <nav class="hk-nav hk-nav-light">
             <a href="javascript:void(0);" id="hk_nav_close" class="hk-nav-close"><span class="feather-icon"><i data-feather="x"></i></span></a>
             <div class="nicescroll-bar">
                 <div class="navbar-nav-wrap">
-                    <ul class="navbar-nav flex-column">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#dash_drp">
-                                <span class="feather-icon"><i data-feather="activity"></i></span>
-                                <span class="nav-link-text">Dashboard</span>
-                            </a>
-                            <ul id="dash_drp" class="nav flex-column collapse collapse-level-1">
-                                <li class="nav-item">
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item active">
-                                            <a class="nav-link" href="dashboard1.html">CRM</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="dashboard2.html">Project</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="dashboard3.html">Statistics</a>
-                                        </li>
-
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+                    <ul class="navbar-nav flex-column">                  
                         <li class="nav-item">
                             <a class="nav-link link-with-badge" href="javascript:void(0);" data-toggle="collapse" data-target="#app_drp">
                                 <span class="feather-icon"><i data-feather="package"></i></span>
                                 <span class="nav-link-text">Application</span>
-                                <span class="badge badge-primary badge-pill">4</span>
+                                <span class="badge badge-primary badge-pill">3</span>
                             </a>
                             <ul id="app_drp" class="nav flex-column collapse collapse-level-1">
                                 <li class="nav-item">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="chats.html">Chat</a>
+                                            <a class="nav-link" href="#chats.html#">Chat</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="calendar.html">Calendar</a>
+                                            <a class="nav-link" href="#calendar.html">Calendar</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="email.html">Email</a>
+                                            <a class="nav-link" href="#email.html">Email</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="file-manager.html">File Manager</a>
-                                        </li>
+                                       
                                     </ul>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#auth_drp">
-                                <span class="feather-icon"><i data-feather="zap"></i></span>
-                                <span class="nav-link-text">Authentication</span>
+                            <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#Components_drp">
+                                <span class="feather-icon"><i data-feather="layout"></i></span>
+                                <span class="nav-link-text">Employees</span>
                             </a>
-                            <ul id="auth_drp" class="nav flex-column collapse collapse-level-1">
+                            <ul id="Components_drp" class="nav flex-column collapse collapse-level-1">
                                 <li class="nav-item">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#signup_drp">
-                                                Sign Up
+                                            <a class="nav-link" asp-controller="Employee" asp-action="Create">
+                                                @*<i class="far fa-circle nav-icon"></i>*@
+                                                New Employee
                                             </a>
-                                            <ul id="signup_drp" class="nav flex-column collapse collapse-level-2">
-                                                <li class="nav-item">
-                                                    <ul class="nav flex-column">
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="signup.html">Cover</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="signup-simple.html">Simple</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#signin_drp">
-                                                Login
+                                            <a class="nav-link" asp-controller="Employee" asp-action="Index">
+                                                @*<i class="far fa-circle nav-icon"></i>*@
+                                                All Employees
                                             </a>
-                                            <ul id="signin_drp" class="nav flex-column collapse collapse-level-2">
-                                                <li class="nav-item">
-                                                    <ul class="nav flex-column">
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="login.html">Cover</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="login-simple.html">Simple</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#recover_drp">
-                                                Recover Password
-                                            </a>
-                                            <ul id="recover_drp" class="nav flex-column collapse collapse-level-2">
-                                                <li class="nav-item">
-                                                    <ul class="nav flex-column">
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="forgot-password.html">Forgot Password</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="reset-password.html">Reset Password</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="lock-screen.html">Lock Screen</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="404.html">Error 404</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="maintenance.html">Maintenance</a>
-                                        </li>
+                                       
                                     </ul>
                                 </li>
                             </ul>
@@ -320,26 +254,18 @@ License: You must have a valid license purchased only from templatemonster to le
                         <li class="nav-item">
                             <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#pages_drp">
                                 <span class="feather-icon"><i data-feather="file-text"></i></span>
-                                <span class="nav-link-text">Pages</span>
+                                <span class="nav-link-text">Pay</span>
                             </a>
                             <ul id="pages_drp" class="nav flex-column collapse collapse-level-1">
                                 <li class="nav-item">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="profile.html">Profile</a>
+                                            <a class="nav-link" href="profile.html">New Pay</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="invoice.html">Invoice</a>
+                                            <a class="nav-link" href="invoice.html">Payment Records</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="gallery.html">Gallery</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="activity.html">Activity</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="faq.html">Faq</a>
-                                        </li>
+                                      
                                     </ul>
                                 </li>
                             </ul>
@@ -351,69 +277,7 @@ License: You must have a valid license purchased only from templatemonster to le
                         <span>UI</span>
                     </div>
                     <ul class="navbar-nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#Components_drp">
-                                <span class="feather-icon"><i data-feather="layout"></i></span>
-                                <span class="nav-link-text">Components</span>
-                            </a>
-                            <ul id="Components_drp" class="nav flex-column collapse collapse-level-1">
-                                <li class="nav-item">
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="alerts.html">Alerts</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="avatar.html">Avatar</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="badge.html">Badge</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="buttons.html">Buttons</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="cards.html">Cards</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="carousel.html">Carousel</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="collapse.html">Collapse</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="dropdowns.html">Dropdown</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="list-group.html">List Group</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="modal.html">Modal</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="nav.html">Nav</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="navbar.html">Navbar</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="nestable.html">Nestable</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="pagination.html">Pagination</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="popovers.html">Popovers</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="progress.html">Progress</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="tooltip.html">Tooltip</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+                       
                         <li class="nav-item">
                             <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#content_drp">
                                 <span class="feather-icon"><i data-feather="type"></i></span>
@@ -581,31 +445,7 @@ License: You must have a valid license purchased only from templatemonster to le
                         </li>
                     </ul>
                     <hr class="nav-separator">
-                    <div class="nav-header">
-                        <span>Getting Started</span>
-                        <span>GS</span>
-                    </div>
-                    <ul class="navbar-nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link" href="documentation.html">
-                                <span class="feather-icon"><i data-feather="book"></i></span>
-                                <span class="nav-link-text">Documentation</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-with-badge" href="#">
-                                <span class="feather-icon"><i data-feather="eye"></i></span>
-                                <span class="nav-link-text">Changelog</span>
-                                <span class="badge badge-sm badge-danger badge-pill">v 1.0</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span class="feather-icon"><i data-feather="headphones"></i></span>
-                                <span class="nav-link-text">Support</span>
-                            </a>
-                        </li>
-                    </ul>
+                   
                 </div>
             </div>
         </nav>
@@ -666,7 +506,7 @@ License: You must have a valid license purchased only from templatemonster to le
                 <footer class="footer">
                     <div class="row">
                         <div class="col-md-6 col-sm-12">
-                            <p>Pampered by<a href="https://hencework.com/" class="text-dark" target="_blank">Hencework</a> © 2019</p>
+                            <p>Designed &Aacute; mainted by<a asp-controller="Employee" asp-action="Index" class="text-dark" target="_blank">HRS Compute Sln</a> © @DateTime.UtcNow.Year</p>
                         </div>
                         <div class="col-md-6 col-sm-12">
                             <p class="d-inline-block">Follow us</p>

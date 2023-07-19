@@ -1033,8 +1033,16 @@
       "PackagePath": "staticwebassets\\images\\employee\\02023071920191010_152907.jpg"
     },
     {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\images\\employee\\02023071920191108_092938_Richtone(HDR).jpg",
+      "PackagePath": "staticwebassets\\images\\employee\\02023071920191108_092938_Richtone(HDR).jpg"
+    },
+    {
       "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\images\\employee\\02023071920191231_182845.jpg",
       "PackagePath": "staticwebassets\\images\\employee\\02023071920191231_182845.jpg"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\images\\employee\\020230719Screenshot_2018-09-23-14-29-14.png",
+      "PackagePath": "staticwebassets\\images\\employee\\020230719Screenshot_2018-09-23-14-29-14.png"
     },
     {
       "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\js\\site.js",
@@ -1867,6 +1875,122 @@
     {
       "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\flot\\jquery.flot.time.js",
       "PackagePath": "staticwebassets\\vendors\\flot\\jquery.flot.time.js"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\css\\all.css",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\css\\all.css"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\css\\all.min.css"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\css\\brands.css",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\css\\brands.css"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\css\\brands.min.css",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\css\\brands.min.css"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\css\\fontawesome.css"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\css\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\css\\fontawesome.min.css"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\css\\regular.css",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\css\\regular.css"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\css\\regular.min.css",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\css\\regular.min.css"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\css\\solid.css",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\css\\solid.css"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\css\\solid.min.css",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\css\\solid.min.css"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\css\\svg-with-js.css",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\css\\svg-with-js.css"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\css\\svg-with-js.min.css",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\css\\svg-with-js.min.css"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\css\\v4-shims.css",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\css\\v4-shims.css"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\css\\v4-shims.min.css",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\css\\v4-shims.min.css"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\webfonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\webfonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\webfonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\webfonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\webfonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\webfonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\webfonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\webfonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\webfonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\webfonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\webfonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\webfonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\webfonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\webfonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\webfonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\webfonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\webfonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\webfonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fontawesome-free\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\vendors\\fontawesome-free\\webfonts\\fa-solid-900.woff2"
     },
     {
       "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\vendors\\fullcalendar\\dist\\fullcalendar.js",

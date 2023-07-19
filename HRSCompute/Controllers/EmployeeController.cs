@@ -37,7 +37,7 @@ namespace HRSCompute.Controllers
                 Id = employee.Id,
                 EmployeeNo = employee.EmployeeNo,
                 FullName = employee.FullName,
-                //CHECK THIS ENUM
+                Designation = employee.Designation,
                 Gender = employee.Gender.ToString(),
                 ImageUrl = employee.ImageUrl,
                 DateJoined = employee.DateJoined,
