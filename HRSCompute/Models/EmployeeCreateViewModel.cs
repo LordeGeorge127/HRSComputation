@@ -7,7 +7,7 @@ namespace HRSCompute.Models
     {
         public int Id { get; set; }
 
-        public string EmployeeNo { get; set; }
+        public string? EmployeeNo { get; set; }
         [Required(ErrorMessage = "First Name is Required"), StringLength(50, MinimumLength = 2)]
         [RegularExpression(@"^[A-Z][a-zA-Z "" '\s-]*$")]
         public string FirstName { get; set; }
@@ -44,8 +44,7 @@ namespace HRSCompute.Models
         public StudentLoan StudentLoan { get; set; }
         [Display(Name = "Union Member")]
         public NSSFMember UnionMember { get; set; }
-        //National housing fund 3%
-        public string NHF { get; set; }
+    
         //NATION SOCIAL SECURITY FUND 
 
         public string Address { get; set; }
@@ -54,7 +53,5 @@ namespace HRSCompute.Models
 
         public string PostCode { get; set; }
 
-
-        public ICollection<PaymentRecord> PaymentRecords { get; set; }
     }
 }

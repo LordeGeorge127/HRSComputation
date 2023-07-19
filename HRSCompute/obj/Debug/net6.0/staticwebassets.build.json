@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "klQdtccigBIGOyhpsQyb9xCWCyofMWzgOF3wTE8k/CA=",
+  "Hash": "R7aUkKjXWUNIZZtqRgVdbBIAoEiOYC6RXU5P1/yP7wA=",
   "Source": "HRSCompute",
   "BasePath": "_content/HRSCompute",
   "Mode": "Default",
@@ -4401,6 +4401,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\images\\employee\\02023071920191010_152907.jpg",
+      "SourceId": "HRSCompute",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\",
+      "BasePath": "_content/HRSCompute",
+      "RelativePath": "images/employee/02023071920191010_152907.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\employee\\02023071920191010_152907.jpg"
+    },
+    {
+      "Identity": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\images\\employee\\02023071920191231_182845.jpg",
+      "SourceId": "HRSCompute",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\",
+      "BasePath": "_content/HRSCompute",
+      "RelativePath": "images/employee/02023071920191231_182845.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\employee\\02023071920191231_182845.jpg"
     },
     {
       "Identity": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\js\\site.js",

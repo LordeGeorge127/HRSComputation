@@ -1,6 +1,7 @@
 ﻿using HRSCompute.Entity;
 using HRSCompute.Models;
 using HRSCompute.Persistence;
+using HRSCompute.Services.Interfaces;
 using HRSCompute.Services.Repository;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,10 +9,10 @@ namespace HRSCompute.Controllers
 {
     public class EmployeeController : Controller
     {
-        private readonly EmployeeRepository _employeeRepository;
+        private readonly IEmployeeRepository _employeeRepository;
         private readonly IWebHostEnvironment _hostEnvironment;
 
-        public EmployeeController( EmployeeRepository employeeRepository, IWebHostEnvironment hostEnvironment)
+        public EmployeeController( IEmployeeRepository employeeRepository, IWebHostEnvironment hostEnvironment)
         {
           
             _employeeRepository = employeeRepository;
@@ -70,6 +71,7 @@ namespace HRSCompute.Controllers
                     DOB = model.DOB,
                     NHIF = model.NHIF,
                     Phone = model.Phone,
+                    PIN = model.PIN,
                     DateJoined = model.DateJoined,
                     NationalID = model.NationalID,
                     PaymentMethod = model.PaymentMethod,

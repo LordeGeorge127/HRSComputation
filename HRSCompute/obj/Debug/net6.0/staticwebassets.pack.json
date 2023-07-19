@@ -1029,6 +1029,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\images\\employee\\02023071920191010_152907.jpg",
+      "PackagePath": "staticwebassets\\images\\employee\\02023071920191010_152907.jpg"
+    },
+    {
+      "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\images\\employee\\02023071920191231_182845.jpg",
+      "PackagePath": "staticwebassets\\images\\employee\\02023071920191231_182845.jpg"
+    },
+    {
       "Id": "C:\\Projects\\HRSComputation\\HRSCompute\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

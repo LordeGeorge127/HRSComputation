@@ -10,7 +10,7 @@ namespace HRSCompute.Entity
     public class Employee
     {
         public int Id { get; set; }
-        [Required]
+      
         public string EmployeeNo { get; set; }
         [Required, MaxLength(50)]
         public string FirstName { get; set; }
@@ -33,8 +33,7 @@ namespace HRSCompute.Entity
         public StudentLoan StudentLoan { get; set; }
         //NATION SOCIAL SECURITY FUND 
         public NSSFMember UnionMember { get; set; }
-        //National housing fund 3%
-        public string NHF { get; set; }      
+        //National housing fund 3%    
         public string Address  { get; set; }
         public string City { get; set; }
         public string PostCode { get; set; }
