@@ -1,6 +1,7 @@
 ﻿using HRSCompute.Entity;
 using HRSCompute.Persistence;
 using HRSCompute.Services.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -56,6 +57,14 @@ namespace HRSCompute.Services.Repository
             throw new NotImplementedException();
         }
 
-        
+        public async Task<Employee> GetByIdAsync(int id)
+        {
+            return await _context.Employees.FirstOrDefaultAsync(e => e.Id == id);
+        }
+
+        //public async Task<Employee> GetBydIdAsNoTracking(int id)
+        //{
+        //    return await _context.Employees.AsNoTracking().FirstOrDefaultAsync(e => e.Id == id);
+        //}
     }
 }

@@ -15,9 +15,10 @@ namespace HRSCompute.Models
      
         public string LastName { get; set; }
 
-        public string Gender { get; set; }
+        public Gender Gender { get; set; }
         public IFormFile? ImageUrl { get; set; }
         public string Phone { get; set; }
+        public string PIN { get; set; }
         [DataType(DataType.Date), Display(Name = "Date Joined")]
         
         public DateTime DateJoined { get; set; }
