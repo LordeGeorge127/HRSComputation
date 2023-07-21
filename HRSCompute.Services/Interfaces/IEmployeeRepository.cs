@@ -15,6 +15,7 @@ namespace HRSCompute.Services.Interfaces
         Task<Employee> GetByIdAsync(int id);
         Task UpdateAsync( Employee employee);
         Task UpdateAsync(int id);
+     
         Task DeleteAsync(int employeeId);
         decimal UnionFees(int Id);
         decimal StudenLoanRepayment(int id,  decimal totalAmount);

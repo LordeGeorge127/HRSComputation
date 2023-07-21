@@ -62,6 +62,7 @@ namespace HRSCompute.Services.Repository
             return await _context.Employees.FirstOrDefaultAsync(e => e.Id == id);
         }
 
+
         //public async Task<Employee> GetBydIdAsNoTracking(int id)
         //{
         //    return await _context.Employees.AsNoTracking().FirstOrDefaultAsync(e => e.Id == id);

@@ -32,20 +32,20 @@ namespace HRSCompute.Controllers
         }
         public  IActionResult Index()
         {
-            //var employees = _employeeRepository.GetAll().Select(employee => new EmployeeIndexViewModel
-            //{
-            //    Id = employee.Id,
-            //    EmployeeNo = employee.EmployeeNo,
-            //    FullName = employee.FullName,
-            //    Designation = employee.Designation,
-            //    Gender = employee.Gender.ToString(),
-            //    ImageUrl = employee.ImageUrl,
-            //    DateJoined = employee.DateJoined,
-            //    City = employee.City,
-            //}).ToList();
-            //return View(employees);
-            IEnumerable<Employee> employees = _employeeRepository.GetAll();
+            var employees = _employeeRepository.GetAll().Select(employee => new EmployeeIndexViewModel
+            {
+                Id = employee.Id,
+                EmployeeNo = employee.EmployeeNo,
+                FullName = employee.FullName,
+                Designation = employee.Designation,
+                Gender = employee.Gender.ToString(),
+                ImageUrl = employee.ImageUrl,
+                DateJoined = employee.DateJoined,
+                City = employee.City,
+            }).ToList();
             return View(employees);
+            //IEnumerable<Employee> employees = _employeeRepository.GetAll();
+            //return View(employees);
         }
         [HttpGet]
         public IActionResult Create()
@@ -210,7 +210,7 @@ namespace HRSCompute.Controllers
         }
         public async Task<IActionResult> Delete(int id)
         {
-            var employee =  _employeeRepository.GetById(id);
+            var employee = _employeeRepository.GetById(id);
             if (employee == null) { return NotFound(); }
             var model = new EmployeeDeleteViewModel()
             {
@@ -223,12 +223,26 @@ namespace HRSCompute.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(EmployeeDeleteViewModel model)
         {
-      
-        await _employeeRepository.DeleteAsync(model.Id);
+
+            await _employeeRepository.DeleteAsync(model.Id);
             return RedirectToAction("Index");
         }
 
+        //public async Task<IActionResult> Delete(int id)
+        //{
+        //    var employee = _employeeRepository.GetByIdAsync(id);
+        //    if (employee == null) { return NotFound(); };
+        //    return View(employee);
+        //}
+        //[HttpPost]
+        //public async Task<IActionResult> DeleteEmployee(int id)
+        //{
+        //    var employee = _employeeRepository.GetByIdAsync(id);
+        //    if (employee == null) { return View("Error"); };
+        //    await _employeeRepository.Delete(employee.Id);
+        //    return View(employee);
 
+        //}
 
 
 
