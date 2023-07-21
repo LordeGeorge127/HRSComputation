@@ -208,7 +208,7 @@ namespace HRSCompute.Controllers
             };
             return View(model);
         }
-        public async Task<IActionResult> Delete(int id)
+        public IActionResult Delete(int id)
         {
             var employee = _employeeRepository.GetById(id);
             if (employee == null) { return NotFound(); }
@@ -217,7 +217,7 @@ namespace HRSCompute.Controllers
                 Id = employee.Id,
                 FullName = employee.FullName
             };
-            return View(employee);
+            return View(model);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -228,44 +228,6 @@ namespace HRSCompute.Controllers
             return RedirectToAction("Index");
         }
 
-        //public async Task<IActionResult> Delete(int id)
-        //{
-        //    var employee = _employeeRepository.GetByIdAsync(id);
-        //    if (employee == null) { return NotFound(); };
-        //    return View(employee);
-        //}
-        //[HttpPost]
-        //public async Task<IActionResult> DeleteEmployee(int id)
-        //{
-        //    var employee = _employeeRepository.GetByIdAsync(id);
-        //    if (employee == null) { return View("Error"); };
-        //    await _employeeRepository.Delete(employee.Id);
-        //    return View(employee);
-
-        //}
-
-
-
-        //public async Task<IActionResult> Delete(int id)
-        //{
-        //    var clubDetails = await _clubRepository.GetByIdAsync(id);
-        //    if (clubDetails == null) return View("Error");
-        //    return View(clubDetails);
-        //}
-        //[HttpPost, ActionName("Delete")]
-        //public async Task<IActionResult> DeleteClub(int id)
-        //{
-        //    var clubDetails = await _clubRepository.GetByIdAsync(id);
-        //    if (clubDetails == null) return View("Error");
-        //    _clubRepository.Delete(clubDetails);
-        //    return RedirectToAction("Index");
-        //}
-        //public async Task<IActionResult> Detail(int id)
-        //{
-        //    //Club club = _context.Clubs.Include(a =>a.Address).FirstOrDefault(c => c.Id == id);
-        //    Club club = await _clubRepository.GetByIdAsync(id);
-        //    return View(club);
-        //}
 
     }
 }

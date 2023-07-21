@@ -29,6 +29,7 @@ namespace HRSCompute.Services.Repository
         {
             var employee = GetById(employeeId);
             _context.Remove(employee);
+            await _context.SaveChangesAsync();
         }
 
         public IEnumerable<Employee> GetAll() => _context.Employees;
