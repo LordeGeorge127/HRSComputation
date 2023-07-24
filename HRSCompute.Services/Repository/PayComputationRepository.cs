@@ -48,7 +48,7 @@ namespace HRSCompute.Services.Repository
             var allTaxYears = _context.TaxYears.Select(taxYears => new SelectListItem
             {
                 Text = taxYears.YearofTax,
-                ValueTask = taxYears.Id.ToString(),
+                Value = taxYears.Id.ToString(),
             });
             return allTaxYears;
         }
