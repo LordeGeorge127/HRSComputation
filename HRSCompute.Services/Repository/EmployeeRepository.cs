@@ -13,6 +13,8 @@ namespace HRSCompute.Services.Repository
     public class EmployeeRepository : IEmployeeRepository
     {
         private readonly ApplicationDbContext _context;
+        private decimal Helb;
+        private decimal fee;
 
         public EmployeeRepository(ApplicationDbContext context)
         {
@@ -50,18 +52,34 @@ namespace HRSCompute.Services.Repository
 
         public decimal StudenLoanRepayment(int id, decimal totalAmount)
         {
-            throw new NotImplementedException();
+            var employee = GetById(id);
+            if(employee.StudentLoan == StudentLoan.Yes )
+            {
+                Helb = .15m * totalAmount;
+            }
+            return Helb;
         }
 
-        public decimal UnionFees(int Id)
+        public decimal UnionFees(int id,decimal totalAmount)
         {
-            throw new NotImplementedException();
+            var employee = GetById(id);
+            if (employee.UnionMember == NSSFMember.Yes && totalAmount <18000)
+            {
+                fee = 720m;
+            }
+            else
+            {
+                fee = .06m * totalAmount;
+            }
+            return fee;
         }
 
         public async Task<Employee> GetByIdAsync(int id)
         {
             return await _context.Employees.FirstOrDefaultAsync(e => e.Id == id);
         }
+
+   
 
 
         //public async Task<Employee> GetBydIdAsNoTracking(int id)

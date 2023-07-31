@@ -17,7 +17,7 @@ namespace HRSCompute.Services.Interfaces
         Task UpdateAsync(int id);
      
         Task DeleteAsync(int employeeId);
-        decimal UnionFees(int Id);
+        decimal UnionFees(int id, decimal totalAmount);
         decimal StudenLoanRepayment(int id,  decimal totalAmount);
         IEnumerable<Employee> GetAll(); 
     }

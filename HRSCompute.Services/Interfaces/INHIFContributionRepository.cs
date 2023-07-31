@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace HRSCompute.Services.Interfaces
 {
-    public interface ITaxRepository
+    public interface INHIFContributionRepository
     {
-        decimal TaxAmount(decimal totalAmount);
+        int CalculateNHIFContribution(int monthlyGrossIncome);
     }
 }
