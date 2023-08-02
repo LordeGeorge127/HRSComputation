@@ -55,7 +55,9 @@ namespace HRSCompute.Services.Repository
 
         public PaymentRecord GetById(int id) => _context.PaymentRecords.Where(p => p.Id == id).FirstOrDefault();
 
-
+        public TaxYear GetTaxYearById(int id) =>
+            _context.TaxYears.Where(year => year.Id == id).FirstOrDefault();    
+        
 
         public decimal NetPay(decimal totalDeductions, decimal totalEarnings) => totalEarnings - totalDeductions;
 

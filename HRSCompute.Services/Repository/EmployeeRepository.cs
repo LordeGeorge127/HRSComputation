@@ -1,6 +1,7 @@
 ﻿using HRSCompute.Entity;
 using HRSCompute.Persistence;
 using HRSCompute.Services.Interfaces;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -53,7 +54,7 @@ namespace HRSCompute.Services.Repository
         public decimal StudenLoanRepayment(int id, decimal totalAmount)
         {
             var employee = GetById(id);
-            if(employee.StudentLoan == StudentLoan.Yes )
+            if(employee.StudentLoan == StudentLoan.Yes && totalAmount >= 10000 )
             {
                 Helb = .15m * totalAmount;
             }
@@ -79,7 +80,16 @@ namespace HRSCompute.Services.Repository
             return await _context.Employees.FirstOrDefaultAsync(e => e.Id == id);
         }
 
-   
+        public IEnumerable<SelectListItem> GetAllEmployeesForPayroll()
+        {
+            return GetAll().Select(emp => new SelectListItem()
+            {
+                Text = emp.FullName,
+                Value = emp.Id.ToString(),
+            });
+        }
+
+
 
 
         //public async Task<Employee> GetBydIdAsNoTracking(int id)

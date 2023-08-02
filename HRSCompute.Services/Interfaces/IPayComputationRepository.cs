@@ -11,6 +11,7 @@ namespace HRSCompute.Services.Interfaces
     public interface IPayComputationRepository
     {
         Task CreateAsync(PaymentRecord paymentRecord);
+        TaxYear GetTaxYearById(int id);
         PaymentRecord GetById(int id);
         IEnumerable<PaymentRecord> GetAll();
         IEnumerable<SelectListItem> GetAllTaxYear();

@@ -15,10 +15,11 @@ namespace HRSCompute.Entity
         [ForeignKey("Employee")]
         public int EmployeeId { get; set; }
         public Employee Employee { get; set; }
+        public string FullName { get; set; }
         public string NiNo { get; set; }
 
         public DateTime PayDate { get; set; }
-        public DateTime PayMonth { get; set; }
+        public string PayMonth { get; set; }
         [ForeignKey("TaxYear")]
         public int TaxYearId { get; set; }
         public TaxYear TaxYear { get; set; }

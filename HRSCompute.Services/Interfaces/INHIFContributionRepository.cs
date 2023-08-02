@@ -8,6 +8,6 @@ namespace HRSCompute.Services.Interfaces
 {
     public interface INHIFContributionRepository
     {
-        int CalculateNHIFContribution(int monthlyGrossIncome);
+        decimal CalculateNHIFContribution(decimal monthlyGrossIncome);
     }
 }
