@@ -19,7 +19,7 @@ namespace HRSCompute.Services.Interfaces
      
         Task DeleteAsync(int employeeId);
         decimal UnionFees(int id, decimal totalAmount);
-        decimal StudenLoanRepayment(int id,  decimal totalAmount);
+        decimal StudenLoanRepayment(int id, decimal totalAmount);
         IEnumerable<Employee> GetAll();
         IEnumerable<SelectListItem> GetAllEmployeesForPayroll();
             

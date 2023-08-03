@@ -29,7 +29,7 @@ namespace HRSCompute.Services.Repository
         { Tuple.Create(100000, int.MaxValue), 1700 },
     };
 
-        public int CalculateNHIFContribution(int monthlyGrossIncome)
+        public decimal CalculateNHIFContribution(decimal monthlyGrossIncome)
         {
             int nhifContribution = 0;
 

@@ -15,6 +15,11 @@ namespace HRSCompute.Controllers
         private decimal overtimeEarnings;
         private decimal contractualEarnings;
         private decimal totalEarnings;
+        private decimal totalDeductions;
+        private decimal taxPAYE;
+        private decimal unionfee;
+        private decimal helb;
+        private decimal nhif;
 
         public PaymentController(
             IPayComputationRepository payComputation,
@@ -54,9 +59,10 @@ namespace HRSCompute.Controllers
             ViewBag.Employees = _employeeRepository.GetAllEmployeesForPayroll();
             ViewBag.taxYears = _payComputation.GetAllTaxYear();
             var model = new PaymentRecordCreateViewModel();
+            return View(model);
         }
         [HttpPost]
-        public IActionResult Create(PaymentRecordCreateViewModel model)
+        public async Task<IActionResult> Create(PaymentRecordCreateViewModel model)
         {
             if (ModelState.IsValid)
             {
@@ -65,25 +71,98 @@ namespace HRSCompute.Controllers
                     Id = model.Id,
                     EmployeeId = model.EmployeeId,
                     FullName = _employeeRepository.GetById(model.EmployeeId).FullName,
-                     NiNo = _employeeRepository.GetById(model.EmployeeId).NHIF,
-                     PayDate = model.PayDate,
-                     PayMonth= model.PayMonth,
-                     TaxYearId = model.TaxYearId,
+                    NiNo = _employeeRepository.GetById(model.EmployeeId).NHIF,
+                    PayDate = model.PayDate,
+                    PayMonth = model.PayMonth,
+                    TaxYearId = model.TaxYearId,
                     TaxCode = model.TaxCode,
                     HourlyRate = model.HourlyRate,
                     HoursWorked = model.HoursWorked,
                     ContractualHours = model.ContractualHours,
-                    OverTimeHours = overtimeHrs = _payComputation.OverTimeHours(model.HoursWorked,model.ContractualHours),
-                    ContractualEarnings = contractualEarnings =  _payComputation.ContractualEarnings(model.ContractualHours, model.HoursWorked,model.HourlyRate),
-                    OverTimeEarnings = overtimeEarnings =  _payComputation.OverTimeEarnings(_payComputation.OverTimeRate(model.HourlyRate),overtimeHrs),
+                    OverTimeHours = overtimeHrs = _payComputation.OverTimeHours(model.HoursWorked, model.ContractualHours),
+                    ContractualEarnings = contractualEarnings = _payComputation.ContractualEarnings(model.ContractualHours, model.HoursWorked, model.HourlyRate),
+                    OverTimeEarnings = overtimeEarnings = _payComputation.OverTimeEarnings(_payComputation.OverTimeRate(model.HourlyRate), overtimeHrs),
                     TotalEarnings = totalEarnings = _payComputation.TotalEarnings(overtimeEarnings, contractualEarnings),
-                    TaxPAYE = _taxRepository.TaxAmount(totalEarnings),
-                    UnionFee = _employeeRepository.UnionFees(model.EmployeeId),
-                    HELB = _employeeRepository.StudenLoanRepayment(model.HELB),
-                    NHIFContribution = _nHIFContribution.CalculateNHIFContribution(totalEarnings),
-
-                }
+                    TaxPAYE = taxPAYE = _taxRepository.TaxAmount(totalEarnings),
+                    NSSFFees = unionfee = _employeeRepository.UnionFees(model.EmployeeId, totalEarnings),
+                    HELB = helb = _employeeRepository.StudenLoanRepayment(model.EmployeeId, totalEarnings),
+                    NHIFContribution = nhif = _nHIFContribution.CalculateNHIFContribution(totalEarnings),
+                    TotalDeductions =totalDeductions =  _payComputation.TotalDeductions(taxPAYE, unionfee, helb, nhif),
+                    NetPayment = _payComputation.NetPay(totalEarnings, totalDeductions)
+                };
+                await _payComputation.CreateAsync(payRecord);
+                return RedirectToAction(nameof(Index));
             }
+            ViewBag.Employees = _employeeRepository.GetAllEmployeesForPayroll();
+            ViewBag.taxYears = _payComputation.GetAllTaxYear();
+            return View();
         }
+        public IActionResult Detail (int id)
+        {
+            var paymentRecord = _payComputation.GetById(id);
+            if (paymentRecord == null) { return NotFound(); }
+            var model = new PaymentRecordDetailViewModel()
+            {
+                Id = paymentRecord.Id,
+                EmployeeId = paymentRecord.EmployeeId,
+                FullName = paymentRecord.FullName,
+                NiNo = paymentRecord.NiNo,
+                PayDate = paymentRecord.PayDate,
+                PayMonth = paymentRecord.PayMonth,
+                TaxYearId = paymentRecord.TaxYearId,
+                Year = _payComputation.GetTaxYearById(paymentRecord.TaxYearId).YearofTax,
+                TaxCode = paymentRecord.TaxCode,
+                HourlyRate = paymentRecord.HourlyRate,
+                HoursWorked = paymentRecord.HoursWorked,
+                ContractualHours = paymentRecord.ContractualHours,
+                OverTimeHours = paymentRecord.OverTimeHours,
+                OverTimeRate = _payComputation.OverTimeRate(paymentRecord.HourlyRate),
+                ContractualEarnings = paymentRecord.ContractualEarnings,
+                Tax = paymentRecord.TaxPAYE,
+                NIC = paymentRecord.NHIFContribution,
+                UnionFee = paymentRecord.NSSFFees,
+                HELB = paymentRecord.HELB,
+                TotalEarnings = paymentRecord.TotalEarnings,
+                Employee = paymentRecord.Employee,
+                TaxYear = paymentRecord.TaxYear,
+                NetPayment = paymentRecord.NetPayment,
+            };
+            return View(model);
+        }
+
+        [HttpGet]
+        public IActionResult Payslip(int id)
+        {
+            var paymentRecord = _payComputation.GetById(id);
+            if (paymentRecord == null) { return NotFound(); }
+            var model = new PaymentRecordDetailViewModel()
+            {
+                Id = paymentRecord.Id,
+                EmployeeId = paymentRecord.EmployeeId,
+                FullName = paymentRecord.FullName,
+                NiNo = paymentRecord.NiNo,
+                PayDate = paymentRecord.PayDate,
+                PayMonth = paymentRecord.PayMonth,
+                TaxYearId = paymentRecord.TaxYearId,
+                Year = _payComputation.GetTaxYearById(paymentRecord.TaxYearId).YearofTax,
+                TaxCode = paymentRecord.TaxCode,
+                HourlyRate = paymentRecord.HourlyRate,
+                HoursWorked = paymentRecord.HoursWorked,
+                ContractualHours = paymentRecord.ContractualHours,
+                OverTimeHours = paymentRecord.OverTimeHours,
+                OverTimeRate = _payComputation.OverTimeRate(paymentRecord.HourlyRate),
+                ContractualEarnings = paymentRecord.ContractualEarnings,
+                Tax = paymentRecord.TaxPAYE,
+                NIC = paymentRecord.NHIFContribution,
+                UnionFee = paymentRecord.NSSFFees,
+                HELB = paymentRecord.HELB,
+                TotalEarnings = paymentRecord.TotalEarnings,
+                Employee = paymentRecord.Employee,
+                TaxYear = paymentRecord.TaxYear,
+                NetPayment = paymentRecord.NetPayment,
+            };
+            return View(model);
+        }
+
     }
 }
