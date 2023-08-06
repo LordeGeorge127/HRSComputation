@@ -63,7 +63,7 @@ namespace HRSCompute.Services.Repository
             decimal remainingIncomeAboveBand3 = taxableIncome - RateBand3;
             decimal taxBand4 = remainingIncomeAboveBand3 * TaxRate3;
 
-            return taxBand1 + taxBand2 + taxBand3 + taxBand4;
+            return tax =  taxBand1 + taxBand2 + taxBand3 + taxBand4;
         }
     }
 }

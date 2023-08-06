@@ -178,7 +178,7 @@ namespace HRSCompute.Controllers
 
 
         }
-        public async Task<IActionResult> Detail(int id)
+        public  IActionResult Detail(int id)
         {
             //Employee employee = _employeeRepository.GetById(id);
             //return View(employee);

@@ -9,6 +9,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+builder.Services.AddScoped<IPayComputationRepository, PayComputationRepository>();
+builder.Services.AddScoped<ITaxRepository, TaxService>();
+builder.Services.AddScoped<INHIFContributionRepository, NHIFContributionRepository>();
 builder.Services.AddSingleton<HostingEnvironment>(new HostingEnvironment());
 //var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))

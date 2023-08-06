@@ -8,7 +8,7 @@ namespace HRSCompute.Models
         public int Id { get; set; }
         public int EmployeeId { get; set;}
         public Employee Employee { get; set; }
-        [Display(Name ="Name")]
+        [Display(Name ="Full Name")]
         public string FullName { get; set; }
         [Display(Name = "PayDate")]
         public DateTime PayDate { get; set; }

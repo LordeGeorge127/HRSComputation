@@ -20,7 +20,7 @@ namespace HRSCompute.Services.Repository
         {
             _context = context;
         }
-        public decimal ContractualEarnings(decimal hoursWorked, decimal hourlyRate, decimal contractualHours)
+        public decimal ContractualEarnings(decimal contractualHours, decimal hoursWorked, decimal hourlyRate)
         {
             if (hoursWorked < contractualHours)
             {
@@ -59,9 +59,9 @@ namespace HRSCompute.Services.Repository
             _context.TaxYears.Where(year => year.Id == id).FirstOrDefault();    
         
 
-        public decimal NetPay(decimal totalDeductions, decimal totalEarnings) => totalEarnings - totalDeductions;
+        public decimal NetPay(decimal totalEarnings, decimal totalDeductions) => totalEarnings - totalDeductions;
 
-        public decimal OverTimeEarnings(decimal overtimeHours, decimal overtimeRate)=> overtimeHours*overtimeRate;
+        public decimal OverTimeEarnings(decimal overtimeRate, decimal overtimeHours) => overtimeHours*overtimeRate;
 
         public decimal OverTimeHours(decimal hoursWorked, decimal contractualHours)
         {
@@ -73,11 +73,20 @@ namespace HRSCompute.Services.Repository
             return overtimehours;
         }
 
-        public decimal OverTimeRate(decimal hourlyRate) => hourlyRate * 1.5m;
+        public decimal OverTimeRate(decimal hourlyRate)
+        {
+            return hourlyRate * 1.5m;
+        }
 
-        public decimal TotalDeductions(decimal Tax, decimal NHIFC, decimal studentLoanPayment, decimal NSSFFees) =>
-            Tax + NHIFC + studentLoanPayment + NSSFFees;
+        public decimal TotalDeductions(decimal tax, decimal NHIFC, decimal studentLoanPayment, decimal NSSFFees) =>
+            tax + NHIFC + studentLoanPayment + NSSFFees;
 
-        public decimal TotalEarnings(decimal overtimeEarnings, decimal contractualEarnings) => overtimeEarnings + contractualEarnings;
+
+        public decimal TotalEarnings(decimal overtimeEarnings, decimal contractualEarnings)
+        => overtimeEarnings + contractualEarnings;
+        //public decimal TotalDeductions(decimal tax, decimal NHIFC, decimal studentLoanPayment, decimal NSSFFees) =>
+        //    tax + NHIFC + studentLoanPayment + NSSFFees;
+
+        //public decimal TotalEarnings(decimal overtimeEarnings, decimal contractualEarnings) => overtimeEarnings + contractualEarnings;
     }
 }

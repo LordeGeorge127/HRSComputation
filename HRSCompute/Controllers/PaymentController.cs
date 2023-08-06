@@ -87,7 +87,7 @@ namespace HRSCompute.Controllers
                     NSSFFees = unionfee = _employeeRepository.UnionFees(model.EmployeeId, totalEarnings),
                     HELB = helb = _employeeRepository.StudenLoanRepayment(model.EmployeeId, totalEarnings),
                     NHIFContribution = nhif = _nHIFContribution.CalculateNHIFContribution(totalEarnings),
-                    TotalDeductions =totalDeductions =  _payComputation.TotalDeductions(taxPAYE, unionfee, helb, nhif),
+                    TotalDeductions = totalDeductions =  _payComputation.TotalDeductions(taxPAYE, unionfee, helb, nhif),
                     NetPayment = _payComputation.NetPay(totalEarnings, totalDeductions)
                 };
                 await _payComputation.CreateAsync(payRecord);
@@ -117,12 +117,14 @@ namespace HRSCompute.Controllers
                 ContractualHours = paymentRecord.ContractualHours,
                 OverTimeHours = paymentRecord.OverTimeHours,
                 OverTimeRate = _payComputation.OverTimeRate(paymentRecord.HourlyRate),
+                OverTimeEarnings = paymentRecord.OverTimeEarnings,
                 ContractualEarnings = paymentRecord.ContractualEarnings,
                 Tax = paymentRecord.TaxPAYE,
                 NIC = paymentRecord.NHIFContribution,
                 UnionFee = paymentRecord.NSSFFees,
                 HELB = paymentRecord.HELB,
                 TotalEarnings = paymentRecord.TotalEarnings,
+                TotalDeduction = paymentRecord.TotalDeductions,
                 Employee = paymentRecord.Employee,
                 TaxYear = paymentRecord.TaxYear,
                 NetPayment = paymentRecord.NetPayment,

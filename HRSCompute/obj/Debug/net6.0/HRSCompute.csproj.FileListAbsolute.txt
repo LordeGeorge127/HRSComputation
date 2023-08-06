@@ -197,3 +197,4 @@ C:\Projects\HRSComputation\HRSCompute\obj\Debug\net6.0\ref\HRSCompute.dll
 C:\Projects\HRSComputation\HRSCompute\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Projects\HRSComputation\HRSCompute\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Projects\HRSComputation\HRSCompute\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Projects\HRSComputation\HRSCompute\obj\Debug\net6.0\HRSCompute.MvcApplicationPartsAssemblyInfo.cs

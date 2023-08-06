@@ -132,6 +132,10 @@ namespace HRSCompute.Persistence.Migrations
                     b.Property<int>("EmployeeId")
                         .HasColumnType("int");
 
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<decimal?>("HELB")
                         .HasColumnType("money");
 
@@ -163,8 +167,9 @@ namespace HRSCompute.Persistence.Migrations
                     b.Property<DateTime>("PayDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("PayMonth")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("PayMonth")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TaxCode")
                         .IsRequired()

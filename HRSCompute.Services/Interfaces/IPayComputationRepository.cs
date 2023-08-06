@@ -16,12 +16,12 @@ namespace HRSCompute.Services.Interfaces
         IEnumerable<PaymentRecord> GetAll();
         IEnumerable<SelectListItem> GetAllTaxYear();
         decimal OverTimeHours(decimal hoursWorked, decimal contractualHours);
-        decimal ContractualEarnings(decimal hoursWorked, decimal hourlyRate, decimal contractualHours);
+        decimal ContractualEarnings( decimal contractualHours, decimal hoursWorked, decimal hourlyRate);
         decimal OverTimeRate(decimal hourlyRate);
-        decimal OverTimeEarnings(decimal overtimeHours, decimal overtimeRate);
+        decimal OverTimeEarnings(decimal overtimeRate, decimal overtimeHours);
         decimal TotalEarnings(decimal overtimeEarnings, decimal contractualEarnings);
-        decimal TotalDeductions(decimal Tax, decimal NHIFC, decimal studentLoanPayment, decimal NSSFFees);
-        decimal NetPay(decimal totalDeductions, decimal totalEarnings);
+        decimal TotalDeductions(decimal tax, decimal NHIFC, decimal studentLoanPayment, decimal NSSFFees);
+        decimal NetPay( decimal totalEarnings,decimal totalDeductions);
 
     }
 }

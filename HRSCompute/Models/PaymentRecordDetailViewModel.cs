@@ -34,8 +34,8 @@ namespace HRSCompute.Models
         [Display(Name = "Overtime Rate")]
         public decimal OverTimeRate { get; set; }
         [Display(Name = "Contractual Earnings")]
-
         public decimal ContractualEarnings { get; set; }
+        [Display(Name = "Overtime Earnings")]
         public decimal OverTimeEarnings { get; set; }
         public decimal Tax { get; set; }
         //NATIONAL INSURANCE CONTRIBUTION

@@ -47,7 +47,7 @@
         <nav class="navbar navbar-expand-xl navbar-light fixed-top hk-navbar">
             <a id="navbar_toggle_btn" class="navbar-toggle-btn nav-link-hover" href="javascript:void(0);"><span class="feather-icon"><i data-feather="menu"></i></span></a>
             <a class="navbar-brand font-weight-700" href="dashboard1.html">
-                Marvin
+                HRMS
             </a>
             <ul class="navbar-nav hk-navbar-content">
                 <li class="nav-item">
@@ -255,10 +255,16 @@
                                 <li class="nav-item">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="profile.html">New Pay</a>
+                                            <a class="nav-link" asp-controller="Payment" asp-action="Create">
+                                                @*<i class="far fa-circle nav-icon"></i>*@
+                                                New Pay
+                                            </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="invoice.html">Payment Records</a>
+                                            <a class="nav-link" asp-controller="Payment" asp-action="Index">
+                                                @*<i class="far fa-circle nav-icon"></i>*@
+                                                Payroll List
+                                            </a>
                                         </li>
                                       
                                     </ul>
@@ -362,8 +368,8 @@
                 <!-- Title -->
                 <div class="hk-pg-header align-items-top">
                     <div>
-                        <h2 class="hk-pg-title font-weight-600 mb-10">Data Analytics Dashboard</h2>
-                        <p>Questions about onboarding lead data? <a href="#">Learn more.</a></p>
+                        <h2 class="hk-pg-title font-weight-600 mb-10">Human Resource Management System</h2>
+                        @*<p>Questions about onboarding lead data? <a href="#">Learn more.</a></p>*@
                     </div>
               
                 </div>
