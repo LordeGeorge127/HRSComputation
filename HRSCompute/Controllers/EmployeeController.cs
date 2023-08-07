@@ -30,7 +30,7 @@ namespace HRSCompute.Controllers
 
             return EmployeeNo;
         }
-        public  IActionResult Index()
+        public  IActionResult Index(int ? pageNumber)
         {
             var employees = _employeeRepository.GetAll().Select(employee => new EmployeeIndexViewModel
             {
@@ -43,7 +43,8 @@ namespace HRSCompute.Controllers
                 DateJoined = employee.DateJoined,
                 City = employee.City,
             }).ToList();
-            return View(employees);
+            int pageSize = 4;
+            return View(EmployeeListPagination<EmployeeIndexViewModel>.Create(employees,pageNumber?? 1 , pageSize));
             //IEnumerable<Employee> employees = _employeeRepository.GetAll();
             //return View(employees);
         }

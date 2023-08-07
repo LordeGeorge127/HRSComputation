@@ -198,3 +198,11 @@ C:\Projects\HRSComputation\HRSCompute\bin\Debug\net6.0\Microsoft.AspNetCore.Json
 C:\Projects\HRSComputation\HRSCompute\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Projects\HRSComputation\HRSCompute\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 C:\Projects\HRSComputation\HRSCompute\obj\Debug\net6.0\HRSCompute.MvcApplicationPartsAssemblyInfo.cs
+C:\Projects\HRSComputation\HRSCompute\bin\Debug\net6.0\System.Web.Mvc.dll
+C:\Projects\HRSComputation\HRSCompute\bin\Debug\net6.0\System.Web.Razor.dll
+C:\Projects\HRSComputation\HRSCompute\bin\Debug\net6.0\System.Web.Helpers.dll
+C:\Projects\HRSComputation\HRSCompute\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
+C:\Projects\HRSComputation\HRSCompute\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
+C:\Projects\HRSComputation\HRSCompute\bin\Debug\net6.0\System.Web.WebPages.dll
+C:\Projects\HRSComputation\HRSCompute\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll
+C:\Projects\HRSComputation\HRSCompute\bin\Debug\net6.0\Rotativa.dll

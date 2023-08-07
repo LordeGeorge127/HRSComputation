@@ -2,6 +2,7 @@
 using HRSCompute.Models;
 using HRSCompute.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Rotativa;
 
 namespace HRSCompute.Controllers
 {
@@ -166,6 +167,7 @@ namespace HRSCompute.Controllers
                 NetPayment = paymentRecord.NetPayment,
             };
             return View(model);
+            //return new ViewAsPdf("Payslip", model);
         }
 
     }

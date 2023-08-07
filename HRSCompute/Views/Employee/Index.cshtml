@@ -1,7 +1,7 @@
 ﻿@*@using HRSCompute.Entity;
 @model IEnumerable<Employee>*@
 
-@model IEnumerable<EmployeeIndexViewModel>
+@model EmployeeListPagination<EmployeeIndexViewModel>
 
 @{
     ViewData["Title"] = "Employee";
@@ -73,9 +73,9 @@
                                 }
                             </tbody>
                         </table>
-                        @*@{
-                            var disablePrevious = !Model.IsPreviewPageAvailable ? "disabled" : " ";
-                            var disableNext = !Model.IsNexPageAvailable ? "disabled" : " ";
+                        @{
+                            var disablePrevious = !Model.isPreviousPageAvailable ? "disabled" : " ";
+                            var disableNext = !Model.isNextPageAvailable ? "disabled" : " ";
                         }
 
                         <a asp-action="Index"
@@ -87,7 +87,7 @@
                            asp-route-pageNumber="@(Model.PageIndex + 1)"
                            class="btn btn-primary @disableNext ">
                             Next
-                        </a>*@
+                        </a>
                     </div>
                 </div>
             </div>
